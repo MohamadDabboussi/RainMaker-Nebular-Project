@@ -1,0 +1,14 @@
+<nb-card>
+  <nb-card-header>
+    RainMaker Table
+  </nb-card-header>
+    <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="source"
+      (createConfirm)="onAddRainmaker($event)"
+      (deleteConfirm)="onDeleteConfirm($event)"
+      (editConfirm)="onSaveConfirm($event)">
+      </ng2-smart-table>
+      <ngx-mychart></ngx-mychart>
+    </nb-card-body>
+</nb-card>
+  
